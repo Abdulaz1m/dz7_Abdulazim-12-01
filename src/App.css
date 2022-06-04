@@ -1,6 +1,23 @@
 .App {
   text-align: center;
 }
+.header {
+  height: 100px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px !important;
+}
+.footer {
+  height: 100px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px !important;
+  margin-bottom: 50px !important;
+}
 
 .App-logo {
   height: 40vmin;
