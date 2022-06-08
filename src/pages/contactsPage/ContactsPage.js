@@ -1,17 +1,8 @@
-import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
-
 function ContactsPage () {
-
-
     return (
-        <>
-            <Header/>
-            ContactsPage
-            <Footer/>
-        </>
+        <div>
+            <h1>Contacts Page</h1>
+        </div>
     )
-
 }
-
 export default ContactsPage;

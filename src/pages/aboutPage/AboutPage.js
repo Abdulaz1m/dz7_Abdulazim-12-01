@@ -1,24 +1,18 @@
-import { NavLink, useNavigate } from "react-router-dom";
-import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
-
+import {NavLink} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 function AboutPage () {
-
     const navigate = useNavigate()
 
-    console.log(navigate);
-
+    const backTo = () => {
+        navigate("/portfolio", {replace: true, state:"hello"})
+    }
     return (
-        <>
-            <Header/>
-            <button onClick={() => navigate(-1)}>back</button>
-            <h2>AboutPage</h2>
-            <NavLink to="/description">Description</NavLink>
-            <Footer/>
-        </>
+        <div>
+            <h1>About Page</h1>
+            <button onClick={backTo}>назад</button>
+            <NavLink to="/description">description</NavLink>
+        </div>
     )
-
 }
-
 export default AboutPage;

@@ -1,15 +1,13 @@
-import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
-
+import {useLocation} from "react-router-dom";
 
 function PortfolioPage () {
+    const location = useLocation();
+    console.log(location)
+
     return (
-        <>
-            <Header/>
-            PortfolioPage
-            <Footer/>
-        </>
+        <div>
+            <h1>Portfolio Page</h1>
+        </div>
     )
 }
-
 export default PortfolioPage;

@@ -1,14 +1,11 @@
-.menu {
-    display: inline-flex;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: space-between;
-    list-style-type: none;
+.ul {
+    display: flex;
+    justify-content: space-around;
     background: #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  .link:global(.active) {
-    color: red;
-  }
+    padding: 40px;
+    list-style-type: none;
+    color: blue;
+    align-items: flex-end;
+    height: 100%;
+    margin-top: 500px;
+}
